@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Progress</title>
+
+    <!-- Подключение стилей блока -->
+    <link rel="stylesheet" href="./components/Progress/progress.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Progress block -->
+      <div class="progress"></div>
+
+      <div class="controllers">
+        <div class="control">
+          <input id="inputValue" type="text" class="input" />
+          <span class="label">Value</span>
+        </div>
+        <div class="control">
+          <label class="switch">
+            <input type="checkbox" data-state="animated" id="check" />
+            <span class="slider round"></span>
+          </label>
+          <span class="label">Animate</span>
+        </div>
+        <div class="control">
+          <label class="switch">
+            <input type="checkbox" data-state="hidden" id="check" />
+            <span class="slider round"></span>
+          </label>
+          <span class="label">Hide</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подключение скрипта блока -->
+    <script src="./components/Progress/progress.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

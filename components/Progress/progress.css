@@ -1,0 +1,40 @@
+.progress {
+  --progressValue: 0deg;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  position: relative;
+  place-items: center;
+  display: grid;
+  background: conic-gradient(
+    #005bff var(--progressValue),
+    #eff3f6 var(--progressValue)
+  );
+  transition: all 0.5s;
+}
+
+.progress.hide {
+  opacity: 0;
+}
+
+.progress:before {
+  position: absolute;
+  content: "";
+  height: 84%;
+  width: 84%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress.animate {
+  background: conic-gradient(#005bff 180deg, #eff3f6 180deg);
+  animation: conic-gradient 2s ease-out 0s infinite none running;
+}
+@keyframes conic-gradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

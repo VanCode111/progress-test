@@ -1,0 +1,57 @@
+@import "./switcher.css";
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.input {
+  border-radius: 50px;
+  width: 60px;
+  height: 34px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.controllers {
+  margin-left: 100px;
+}
+
+.label {
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 15px;
+}
+
+.control + .control {
+  margin-top: 15px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .controllers {
+    margin-top: 100px;
+    margin-left: 0;
+  }
+}
